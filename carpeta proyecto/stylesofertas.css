@@ -1,0 +1,155 @@
+:root {
+    --primary-color: #8c1919;
+    --secondary-color: #000000;
+    --accent-color: #ffd700;
+    --text-color: #333;
+    --bg-color: #f4f4f4;
+    --white: #fff;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    line-height: 1.6;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+header {
+    background-color: #000000;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    height: 60px;
+    width: auto;
+    margin-right: 20px;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+nav {
+    background-color: var(--primary-color);
+    padding: 0.5rem 0;
+}
+
+nav ul {
+    list-style-type: none;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+nav ul li a:hover {
+    color: var(--accent-color);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.job-search {
+    background: var(--white);
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.job-search form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.job-search input,
+.job-search select,
+.job-search button {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.job-search input,
+.job-search select {
+    flex: 1;
+    min-width: 200px;
+}
+
+.job-search button {
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.job-results {
+    background: var(--white);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.job-results ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.job-results li {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.job-results li:last-child {
+    border-bottom: none;
+}
+
+@media (max-width: 768px) {
+    .job-search form {
+        flex-direction: column;
+    }
+
+    .job-search input,
+    .job-search select,
+    .job-search button {
+        width: 100%;
+    }
+}

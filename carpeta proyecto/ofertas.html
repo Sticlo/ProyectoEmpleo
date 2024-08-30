@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Listado de Ofertas de Empleo. Encuentra oportunidades laborales según tu especialidad."
+    />
+    <title>Ofertas de Empleo - Universidad Distrital</title>
+    <link rel="stylesheet" href="stylesofertas.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <img src="udpng.png" alt="Logo Universidad Distrital" class="logo" />
+        <h1>Ofertas de Empleo</h1>
+      </div>
+    </header>
+
+    <nav aria-label="Navegación principal">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="ofertas.html">Buscar Empleos</a></li>
+        <li><a href="empresas.html">Empresas</a></li>
+        <li><a href="#perfil">Mi Perfil</a></li>
+      </ul>
+    </nav>
+
+    <main class="container">
+      <section id="busqueda" class="job-search">
+        <h2>Buscar Empleos</h2>
+        <form id="search-form" aria-label="Formulario de búsqueda de empleos">
+          <label for="keyword">Palabra clave o título del puesto</label>
+          <input
+            type="text"
+            id="keyword"
+            name="keyword"
+            placeholder="Ej: Ingeniero de Software"
+          />
+          <label for="faculty">Selecciona tu facultad</label>
+          <select id="faculty" name="faculty">
+            <option value="">Selecciona tu facultad</option>
+            <option value="ingenieria">Ingeniería</option>
+            <option value="ciencias">Ciencias y Educación</option>
+            <option value="artes">Artes - ASAB</option>
+            <option value="tecnologica">Tecnológica</option>
+            <option value="medio-ambiente">
+              Medio Ambiente y Recursos Naturales
+            </option>
+          </select>
+          <button type="submit">Buscar</button>
+        </form>
+      </section>
+
+      <section id="resultados" class="job-results">
+        <h2>Resultados de la Búsqueda</h2>
+        <ul id="job-list">
+          <!-- Aquí se cargarán las ofertas de empleo -->
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        &copy; 2024 Universidad Distrital Francisco José de Caldas. Todos los
+        derechos reservados.
+      </p>
+    </footer>
+
+    <script src="main.js" defer></script>
+  </body>
+</html>

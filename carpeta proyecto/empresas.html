@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Página para que las empresas gestionen y publiquen ofertas de empleo."
+    />
+    <title>Gestión de Ofertas de Empleo</title>
+    <link rel="stylesheet" href="stylesempresas.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <h1>Gestión de Ofertas de Empleo</h1>
+      </div>
+    </header>
+    <nav aria-label="Navegación principal">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="ofertas.html">Buscar Empleos</a></li>
+        <li><a href="empresas.html">Empresas</a></li>
+        <li><a href="#perfil">Mi Perfil</a></li>
+      </ul>
+    </nav>
+
+    <main class="container">
+      <section class="manage-offers">
+        <h2>Mis Ofertas de Empleo</h2>
+        <table class="offers-table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Título</th>
+              <th>Ubicación</th>
+              <th>Fecha de Publicación</th>
+              <th>Acciones</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Desarrollador Frontend</td>
+              <td>Bogotá</td>
+              <td>2024-08-25</td>
+              <td>
+                <a href="#editar" class="btn-edit">Editar</a>
+                <a href="#eliminar" class="btn-delete">Eliminar</a>
+              </td>
+            </tr>
+            <!-- Agrega más filas según las ofertas disponibles -->
+          </tbody>
+        </table>
+      </section>
+
+      <section class="post-offer">
+        <h2>Publicar Nueva Oferta</h2>
+        <form aria-label="Formulario de publicación de ofertas de empleo">
+          <label for="title">Título de la oferta</label>
+          <input
+            type="text"
+            id="title"
+            name="title"
+            placeholder="Ej: Ingeniero de Software"
+            required
+          />
+
+          <label for="location">Ubicación</label>
+          <input
+            type="text"
+            id="location"
+            name="location"
+            placeholder="Ej: Bogotá"
+            required
+          />
+
+          <label for="description">Descripción</label>
+          <textarea
+            id="description"
+            name="description"
+            rows="5"
+            placeholder="Descripción de la oferta"
+            required
+          ></textarea>
+
+          <button type="submit" class="btn-submit">Publicar Oferta</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        &copy; 2024 Universidad Distrital Francisco José de Caldas. Todos los
+        derechos reservados.
+      </p>
+    </footer>
+  </body>
+</html>

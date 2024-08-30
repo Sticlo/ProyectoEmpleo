@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portal de Empleo de la Universidad Distrital Francisco José de Caldas. Conectamos estudiantes y graduados con oportunidades laborales excepcionales."
+    />
+    <title>
+      Portal de Empleo - Universidad Distrital Francisco José de Caldas
+    </title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <img
+          src="udpng.png"
+          alt="Logo Universidad Distrital"
+          class="logo"
+          width="150"
+          height="75"
+        />
+        <h1>Portal de Empleo Universitario</h1>
+      </div>
+    </header>
+
+    <nav aria-label="Navegación principal">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="ofertas.html">Buscar Empleos</a></li>
+        <li><a href="empresas.html">Empresas</a></li>
+        <li><a href="#perfil">Mi Perfil</a></li>
+      </ul>
+    </nav>
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Descubre tu próxima oportunidad</h1>
+        <p>Conéctate con empresas que buscan tu talento</p>
+        <a href="#buscar" class="cta-button">Buscar Empleos</a>
+      </div>
+    </section>
+
+    <main class="container">
+      <section id="bienvenida" class="main-content">
+        <h2>Bienvenido al Portal de Empleo</h2>
+        <p><strong>Universidad Distrital Francisco José de Caldas</strong></p>
+        <p>
+          Conectamos a estudiantes y graduados con oportunidades laborales
+          excepcionales.
+        </p>
+      </section>
+
+      <section id="busqueda" class="job-search">
+        <h2>Buscar Empleos</h2>
+        <form aria-label="Formulario de búsqueda de empleos">
+          <label for="keyword">Palabra clave o título del puesto</label>
+          <input
+            type="text"
+            id="keyword"
+            name="keyword"
+            placeholder="Ej: Ingeniero de Software"
+          />
+
+          <label for="faculty">Selecciona tu facultad</label>
+          <select id="faculty" name="faculty">
+            <option value="">Selecciona tu facultad</option>
+            <option value="ingenieria">Ingeniería</option>
+            <option value="ciencias">Ciencias y Educación</option>
+            <option value="artes">Artes - ASAB</option>
+            <option value="tecnologica">Tecnológica</option>
+            <option value="medio-ambiente">
+              Medio Ambiente y Recursos Naturales
+            </option>
+          </select>
+
+          <button type="button">Buscar</button>
+        </form>
+      </section>
+
+      <section id="estadisticas" class="stats">
+        <h2>Estadísticas de Empleo</h2>
+        <div class="stats-grid">
+          <article class="stat-item">
+            <p class="stat-number">500+</p>
+            <p class="stat-description">Ofertas activas</p>
+          </article>
+          <article class="stat-item">
+            <p class="stat-number">1000+</p>
+            <p class="stat-description">Graduados contratados</p>
+          </article>
+          <article class="stat-item">
+            <p class="stat-number">200+</p>
+            <p class="stat-description">Empresas asociadas</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        &copy; 2024 Universidad Distrital Francisco José de Caldas. Todos los
+        derechos reservados.
+      </p>
+    </footer>
+
+    <script src="main.js" defer></script>
+  </body>
+</html>
